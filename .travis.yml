@@ -4,14 +4,13 @@ python:
   - "3.6"
 
 addons:
-  update: true
   apt:
-    packages:
-      - openjdk-11-jdk  
-      - bazel
-  sources:
+    update: true
+    sources:
     - sourceline: "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8"
       key-url: "https://bazel.build/bazel-release.pub.gpg"
+    packages:
+      - bazel
 
 install:
   - pip3 install --upgrade tensorflow tensorflow-probability numpy attrs scipy
