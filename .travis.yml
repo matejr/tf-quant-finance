@@ -14,7 +14,8 @@ addons:
       - bazel
 
 install:
-  - pip3 install --upgrade tensorflow==2.1 tensorflow-probability==0.8.0 numpy attrs scipy
+  - pip install --upgrade pip
+  - pip install --upgrade tensorflow==2.1 tensorflow-probability==0.8.0 numpy attrs scipy
 
 script:
   - bazel test tf_quant_finance/...
