@@ -18,6 +18,6 @@ install:
   - pip install --upgrade tf-nightly tensorflow-probability==0.8.0 numpy attrs scipy
 
 script:
-  - bazel test tf_quant_finance/...
+  - bazel test tf_quant_finance/... --test_summary=detailed --test_output=errors
 
 
