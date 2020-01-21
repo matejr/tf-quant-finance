@@ -16,7 +16,7 @@ addons:
 install:
   - pip install --upgrade pip
   - pip install --upgrade setuptools
-  - pip install --upgrade tf-nightly tensorflow-probability==0.9.0 numpy attrs scipy
+  - pip install --upgrade tf-nightly tensorflow-probability==0.9.0 numpy attrs
 
 script:
   - bazel test tf_quant_finance/... --test_summary=detailed --test_output=errors
